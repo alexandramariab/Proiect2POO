@@ -376,7 +376,7 @@ Dacă s-ar dori configurabilitate, s-ar folosi fișiere de configurare text, nu 
 | 2e.2 dynamic_cast | ✅ | Utilizat în `Game::Update()` și `CheckForCollisions()` |
 | 2e.3 std::string și vector | ✅ | Fără char* și vectori manuali |
 | 2e.4 shared_ptr | ✅ | Utilizat pentru toate entitățile |
-| 3a. Ierarhie excepții | ⚠️ | GameException, ResourceException, GameplayException, ConfigurationException |
+| 3a. Ierarhie excepții | ✅ | GameException, ResourceException, GameplayException, ConfigurationException |
 | 3b. Throw/catch | ✅ | Throw în constructori, catch în main |
 | 4. Date și funcții statice | ✅ | Entity::entityCount, Alien::speed, Alien::direction |
 | 5. Const | ✅ | Multiple metode const |
@@ -425,16 +425,6 @@ make
    - RAII (Resource Acquisition Is Initialization)
 5. **Exception Handling in C++**: https://en.cppreference.com/w/cpp/language/exceptions
 6. **Dynamic Casting in C++**: https://en.cppreference.com/w/cpp/language/dynamic_cast
-
----
-
-## 6. Observații și Extinderi Posibile
-
-1. **Configurabilitate:** S-ar putea adăuga un fișier de configurare (game_config.txt) pentru parametri ca viteza, intervale de foc, etc.
-2. **Level-uri:** Ar putea fi implementate nivele cu dificultate crescândă
-3. **Score:** Sistem de punctaj pentru inamici eliminați
-4. **Animații:** Efecte vizuale pentru coliziuni, explosii, etc.
-5. **Sunet:** Adăugare de efecte sonore cu SFML Audio
 
 ---
 
