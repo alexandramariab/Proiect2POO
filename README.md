@@ -127,7 +127,7 @@ O a 4-a clasă derivată din `Entity` care introduceți un alt nivel de ierarhie
 2. **`ClonePowerUp`** - creează o navă secundară care trage și ea
    - `applyEffect()` - apelează `activateClone()` pe navă
 
-**Justificare:** Herența multiplă a nivelelor (Entity -> PowerUp -> SpeedPowerUp/ClonePowerUp) demonstrează polimorfismul în adâncime.
+**Justificare:** Nivelele multiple (Entity -> PowerUp -> SpeedPowerUp/ClonePowerUp) demonstrează polimorfismul în adâncime.
 
 ---
 
